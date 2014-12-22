@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>todo app</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  
+<div class="container app-todo">
+  <div class="col-md-4">
+    <h1>TODO APP</h1>
+    <p>input your task</p>
+    <form class="form-inline todo-form">
+      <input class="form-control" type="text">
+      <input type="submit" class="btn" value="送信">
+    </form>
+
+    <h3>USUAL TASKS</h3>
+    <ul class="usual-list list-group">
+      <li class="list-group-item">読書</li>
+      <li class="list-group-item">運動</li>
+      <li class="list-group-item">睡眠</li>
+    </ul>
+  </div>
+  <div class="col-md-4">
+    <h2>TODO LIST</h2>
+    <p class="text-right"><button id="trash" type="button" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span></button></p>
+    <ul class="todo-list list-group"></ul>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/backbone.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
+
